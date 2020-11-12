@@ -6,7 +6,7 @@ Create a simple Rock Paper Scissors page.
 
 ## Project Overview
 
-This is ordinarily a two-part project, first without a UI and later with a UI added. I alread did this project [once before](https://github.com/codyMalcolm/rock_paper_scissors), but when reviewing my previous solution I saw enough areas to improve on to redo the project. However, I'm going to go straight to the UI version, and will modify the specifications accordingly.
+This is ordinarily a two-part project, first without a UI and later with a UI added. I already did this project [once before](https://github.com/codyMalcolm/rock_paper_scissors), but when reviewing my previous solution I saw enough areas to improve on to redo the project. However, I'm going to go straight to the UI version, and will modify the specifications accordingly.
 
 #### Specifications
 
@@ -15,10 +15,10 @@ This is ordinarily a two-part project, first without a UI and later with a UI ad
 1. Project should utilize Git and GitHub.
 2. Should have a "simple UI" using buttons.
 3. There are some basic but specific requirements of how the functionality of the program should be structured:
- * A function should be created to take two inputs representing the player/computer selections and will return a result based on the winner.
- * The returned result should specify whether the player wins and what the selections were.
- * The game should be played until a player gets 5 points.
- * Event listeners should be used (as opposed to `selector.onclick`)
+  * A function should be created to take two inputs representing the player/computer selections and will return a result based on the winner.
+  * The returned result should specify whether the player wins and what the selections were.
+  * The game should be played until a player gets 5 points.
+  * Event listeners should be used (as opposed to `selector.onclick`)
 4. All output should be displayed to the document, not the console.
 
 ##### Ambiguous
@@ -43,6 +43,7 @@ Essentially I am just going to redo this project with a bit more terse logic and
 
 #### Final Thoughts
 
+In addition to completing the project as intended, I added a reset button so the user wouldn't need to reset the page to play again. This was a good opportunity to relearn/review DOM manipulation with JavaScript, and I learned a few things as well, such as how to represent non-breaking spaces in HTML and how to do that from JavaScript. Compared with my previous solution, in addition to the new reset button, I feel this solution is structured better, much more modular, and more aesthetically pleasing.
 
 ## Miscellaneous
 
