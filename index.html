@@ -14,23 +14,17 @@
         <h2>Which will you choose?</h2>
       </div>
       <div class="selections">
-        <button type="button" id="rock" name="rock">
-          <i class="far fa-hand-rock"></i>
-        </button>
-        <button type="button" id="paper" name="paper">
-          <i class="far fa-hand-paper"></i>
-        </button>
-        <button type="button" id="scissors" name="scissors">
-          <i class="far fa-hand-scissors"></i>
-        </button>
+        <i class="fas fa-hand-rock rps-btn" id="rock"></i>
+        <i class="fas fa-hand-paper rps-btn" id="paper"></i>
+        <i class="fas fa-hand-scissors rps-btn" id="scissors"></i>
       </div>
       <div class="results">
-        <p>Rock, paper, scissors...</p>
+        <p id="round-result">Rock, paper, scissors...</p>
         <p id="num-rounds">Rounds played: 0</p>
         <p id="player-score">Player score: 0</p>
         <p id="cpu-score">Computer score: 0</p>
         <p id="num-ties">Ties: 0</p>
-        <p id="final-result"></p>
+        <p id="final-result">&nbsp;</p>
       </div>
     </div>
     <script src="scripts.js">
