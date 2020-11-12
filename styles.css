@@ -12,7 +12,7 @@ h1, h2, p, .rps-btn {
   text-align: center;
 }
 
-h1, h2, p {
+h1, h2, p, button {
   font-family: "Juicebox";
 }
 
@@ -28,6 +28,22 @@ h2 {
 
 p {
   margin: 0.25em;
+}
+
+button {
+  background-color: hsla(210, 85%, 30%, 0.8);
+  color: hsl(210, 15%, 70%);
+  font-size: 1.5em;
+  padding: 0.5em 1.5em;
+  margin: 0.25em;
+  border-radius: 10px;
+  border-color: hsla(210, 85%, 30%,0.8);
+  visibility: hidden;
+}
+
+button:hover {
+  background-color: hsl(210, 85%, 30%);
+  box-shadow: 2px 2px rgba(0,0,0,0.2);
 }
 
 .main, .header, .results {
