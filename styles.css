@@ -1,0 +1,63 @@
+@font-face {
+  font-family: "Juicebox";
+  src: url(fonts/Juicebox.otf);
+}
+
+body {
+  background-color: hsl(210, 15%, 70%);
+}
+
+h1, h2, p, .rps-btn {
+  color: hsl(210, 85%, 30%);
+  text-align: center;
+}
+
+h1, h2, p {
+  font-family: "Juicebox";
+}
+
+h1 {
+  font-size: 2em;
+  margin: 0.5em;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin: 0.5em;
+}
+
+p {
+  margin: 0.25em;
+}
+
+.main, .header, .results {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  height: 100vh;
+  justify-content: center;
+}
+
+.header {
+  justify-content: flex-end;
+  flex-grow: 1
+}
+
+.results {
+  flex-grow: 2;
+  justify-content: flex-start;
+}
+
+.selections {
+  display: flex;
+  justify-content: center;
+}
+
+.rps-btn {
+  color: hsl(210, 85%, 30%);
+  font-size: 10em;
+  margin: 0.25em;
+}
