@@ -2,7 +2,29 @@ const btns = document.querySelectorAll('.rps-btn');
 const results = document.querySelector('.results');
 const scores = {"playerScore": 0, "cpuScore": 0, "ties": 0};
 
-btns.forEach((b) => { b.addEventListener('click', handleClick); });
+function newGame() {
+  btns.forEach((b) => { b.addEventListener('click', handleClick); });
+  Object.keys(scores).forEach((k) => scores[k] = 0);
+
+  results.querySelector('#round-result').textContent = "Rock, paper, scissors...";
+  results.querySelector('#num-rounds').textContent = "Rounds played: 0";
+  results.querySelector('#player-score').textContent = "Player score: 0";
+  results.querySelector('#cpu-score').textContent = "Computer score: 0";
+  results.querySelector('#num-ties').textContent = "Ties: 0";
+  results.querySelector('#final-result').textContent = "\xa0";
+
+  displayResetButton(false);
+}
+
+function displayResetButton(b) {
+  if (b) {
+    results.querySelector('#play-again').addEventListener('click', newGame);
+    results.querySelector('#play-again').style.visibility = 'visible';
+  } else {
+    results.querySelector('#play-again').removeEventListener('click', newGame);
+    results.querySelector('#play-again').style.visibility = 'hidden';
+  }
+}
 
 function handleClick(e) {
   const playerSelection = e.target.id;
@@ -45,9 +67,13 @@ function updateResults(r) {
 
     results.querySelector('#final-result').textContent = finalResult;
     btns.forEach((b) => { b.removeEventListener('click', handleClick); });
+
+    displayResetButton(true);
   }
 }
 
 function gameOver() {
   return (scores.playerScore >= 5 || scores.cpuScore >= 5);
 }
+
+newGame();
